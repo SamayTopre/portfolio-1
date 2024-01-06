@@ -1,0 +1,153 @@
+
+Q1. WHAT IS THE PURPOSE OF SYSTEM CALLS AND LIST THE TYPES OF SYSYTEM CALLS NORMALLY PROVIDED BY OS.ALSO STATES THE METHOD USED TO PASS PARAMETERS TO OS.
+
+# The purpose of system calls serves as the interface between an operating system and a process. 
+  System calls can typically be found as assembly language instructions. 
+  They are also covered in the manuals that the programmers working at the assembly level use. 
+  When a process in user mode needs access to a resource, system calls are typically generated. 
+  The resource is then requested from the kernel via a system call.  
+
+  System calls are required in in following circumstances: 
+
+  If a file system needs files to be created or deleted. A system call is also necessary for reading and writing from files. 
+  development and administration of new procedures. 
+  System calls are also required for network connections. This also applies to packet sending and receiving. 
+  A system call is necessary to access hardware such as a printer, scanner, etc. 
+
+# Types of system calls:
+
+1].Process Control
+2].File Management
+3].Device Management
+4].Information Maintenance
+5].Communication
+
+A.Process control 
+->Process control is the system call that is used to direct the processes.
+  Some process control examples include creating, load, abort, end, execute, process, terminate the process, etc.
+
+B.File management
+->File management is a system call that is used to handle the files. 
+  Some file management examples include creating files, delete files, open, close, read, write, etc.
+
+C.Device management
+-> Device management is a system call that is used to deal with devices.
+   Some examples of device management include read, device, write, get device attributes, release device, etc.
+
+D.Information Maintenance
+->Information maintenance is a system call that is used to maintain information.
+  There are some examples of information maintenance, including getting system data, set time or date, get time or date, set system data, etc.
+
+E.Communication
+->Communication is a system call that is used for communication.
+  There are some examples of communication, including create, delete communication connections, send, receive messages, etc.
+
+
+# Three General Methods For Passing Parameters To The Operating System:
+
+1).Pass parameters using registers(directly).
+2). Store the parameters in a table in memory and the table address is passed in a register to the OS.
+3). Push(store) the parameters onto a stack(by the program) and "pop" off by the Operating System.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q5.TYPES OF OPERATING SYSTEM :
+
+1].BATCH PROCESSING OS
+-> PPT.
+
+2].MULTIPROGRAMMING OS
+-> A multiprogramming operating system may run many programs on a single processor computer. 
+   If one program must wait for an input/output transfer in a multiprogramming operating system, the other programs are ready to use the CPU.
+   As a result, various jobs may share CPU time.
+   However, the execution of their jobs is not defined to be at the same time period.
+   
+   DIAGRAM:
+
+ADVANTAGES:
+   It provides less response time.
+   Various users may use the multiprogramming system at once.
+   Short-time jobs are done quickly in comparison to long-time jobs.
+   It helps in improving turnaround time for short-time tasks.
+   It helps in improving CPU utilization.
+   The resources are utilized smartly.
+
+DISADVANTAGES:
+    It is highly complicated and sophisticated.
+    The CPU scheduling is required.
+    Memory management is needed in the operating system because all types of tasks are stored in the main memory.
+    The harder task is to handle all processes and tasks.
+    If it has a large number of jobs, then long-term jobs will require a long wait.
+
+3].MULTITASKING OS
+->  A multitasking operating system (OS) is one that can work on more than one task at a time by switching between the tasks very rapidly.
+    A multitasking OS can save the current state of each task so that it does not lose its place when it comes back to a task to resume its work.
+    Multitasking operating systems (OSs) are based on the idea of time-sharing.
+    Multitasking OS do not actually perform multiple tasks at the same exact time.
+    Instead, they give the appearance of multitasking by switching back and forth between separate tasks for intervals of time too small for humans to perceive.
+    This makes it seem to the user that multiple tasks are being carried out at once.
+    In multitasking OS One method of deciding the timing of context switching is cooperative multitasking.
+    With this method, the OS will not interrupt a process with a context switch while the process is running but will instead wait for the process to finish.
+    An alternative approach is preemptive multitasking. Unlike cooperative multitasking, preemptive multitasking does not wait for a process to finish before initiating a context switch.
+
+
+adavantages:
+      Manage Several Users.
+      virtual Memory.
+      Secured Memory.
+      Time Shareable.
+
+disadvantages:
+        CPU Heat Up.
+        Processor Boundation.
+        Memory Boundation.
+
+4].MULTIPROCESSING OS
+->  ppt
+
+     
+    advantages:
+        More reliable System.
+        More Economic Systems.
+        Enhanced Throughput.
+
+    disadvantages:
+        high Expense
+        Complicated Operating System Required
+        Large Main Memory Required
+
+
+5].DISTRIBUTED OS
+->  A distributed operating system (DOS) is an essential type of operating system.
+    Distributed systems use many central processors to serve multiple real-time applications and users.
+    As a result, data processing jobs are distributed between the processors.
+    It connects multiple computers via a single communication channel.
+    Furthermore, each of these systems has its own processor and memory.
+    They're also known as loosely coupled systems.
+    
+
+    advantages:
+         Give more performance than single system
+         If one pc in distributed system malfunction or corrupts then other node or pc will take care of
+         
+
+    disadvantages:
+         Security problem due to sharing
+         Some messages can be lost in the network system
+         
+
+6]. REAL-TIME OS:
+->  
+
+   
+
